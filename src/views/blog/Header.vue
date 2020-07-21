@@ -5,7 +5,7 @@
         <router-link v-for="(item, index) in nav_items" :item="item" :key="index" :class="{lianimation:nav_show}" tag="li" :to="item.path" >{{item.title}}</router-link>
       </ul>
 
-      <div class="burger" @click="nav_click" :class="{active:nav_show}">
+      <div class="burger" @click.stop="nav_click" :class="{active:nav_show}">
         <div class="top-line"></div>
         <div class="middle-line"></div>
         <div class="bottom-line"></div>
@@ -16,9 +16,6 @@
 <script>
 export default {
     name:"Header",
-    props:{
-      scroll:Boolean
-    },
     data(){
       return{
         nav_show:false,
@@ -43,6 +40,13 @@ export default {
     computed: {
       
     },
+    mounted(){
+      document.addEventListener('click',(e) => {
+          if (e.target.className != 'header' && e.target.className != 'nav-menu open') {
+            this.nav_show= false;
+          }
+      })
+    }
 
 }
 
