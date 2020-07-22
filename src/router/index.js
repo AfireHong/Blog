@@ -8,20 +8,21 @@ import About from '../views/blog/About.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
+  { path: '/', redirect: '/Home' },
   {
     path: '/',
     name: 'Home',
     component: index,
-    children:[
+    children: [
       {
-        path:'home', name:'home', component: Home, meta: {title: '博客主页'}
+        path: 'home', name: 'home', component: Home, meta: { title: '博客主页' }
       },
       {
-        path:'articles', name:'articles', component: Articles, meta: {title: '文章列表'}
+        path: 'articles', name: 'articles', component: Articles, meta: { title: '文章列表' }
       },
       {
-        path:'About', name:'about', component: About, meta: {title: '关于'}
+        path: 'About', name: 'about', component: About, meta: { title: '关于' }
       },
     ]
   },

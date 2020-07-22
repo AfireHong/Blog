@@ -3,13 +3,16 @@
     <div class="banner">
       <div class="banner-wrap">
         <div class="inner-text">
-          <h2>无尽的远方，无穷的人们</h2>
-          <h1>都和我有关</h1>
+          <h2>I KNOW</h2>
+          <h2>EVERYTHING HAPPENS</h2>
+          <h2>FOR A REASON</h2>
+          <h1>BUT WHAT THE FUCK</h1>
         </div>
       </div>
     </div>
     <div class="">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae mollitia dicta odio, accusamus maiores inventore rem sapiente modi fuga voluptatem cupiditate perferendis asperiores obcaecati natus? Quod fugiat libero exercitationem.
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae mollitia dicta odio, accusamus maiores inventore rem sapiente modi fuga 
+        voluptatem cupiditate perferendis asperiores obcaecati natus? Quod fugiat libero exercitationem.</h1>
     </div>
   </div>
 </template>
@@ -27,6 +30,7 @@ export default {
   background: url(../../assets/bg_img.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .banner-wrap{
     height:100%;

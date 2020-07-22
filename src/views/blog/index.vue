@@ -1,12 +1,14 @@
 <template>
   <div id="wrapper">
-      <Header />
+      <Header/>
       <div id="content"><router-view></router-view></div>
+      <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './Header'
+import Footer from './Footer'
 export default {
     data(){
         return{
@@ -15,6 +17,7 @@ export default {
     },
     components:{
         Header,
+        Footer
     },
     methods:{
     }
