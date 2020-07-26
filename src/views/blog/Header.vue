@@ -63,7 +63,8 @@ export default {
   padding: 0 5vw;
   height: 80px;
   /* background: #2f3640; */
-  background-color:rgba(47, 54, 64, 0.9)
+  background-color:rgba(47, 54, 64, 0.9);
+  z-index: 9999;
 }
 
 .logo {

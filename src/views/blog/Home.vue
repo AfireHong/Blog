@@ -10,22 +10,28 @@
         </div>
       </div>
     </div>
-    <div class="">
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae mollitia dicta odio, accusamus maiores inventore rem sapiente modi fuga 
-        voluptatem cupiditate perferendis asperiores obcaecati natus? Quod fugiat libero exercitationem.</h1>
+    <div class="container">
+      <div class="post-list">
+        <PostCard/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import PostCard from '../../components/PostCard'
 export default {
-    name:'Home'
+    name:'Home',
+    components:{
+      PostCard
+    }
 }
 
 </script>
-<style>
+<style scope>
+
 .banner{
-  height: 100vh;
+  height: 50vh;
   min-height: 500px;
   background: url(../../assets/bg_img.jpg) no-repeat center;
   background-size: cover;
@@ -46,5 +52,31 @@ export default {
   height: 100%;
   text-align: center;
   color: azure;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:576px)
+{.container{max-width:540px}
+}
+
+@media (min-width:768px){
+  .container{max-width:720px}
+}
+
+@media (min-width:992px){
+  .container{max-width:940px}
+}
+
+@media (min-width:1200px){
+  .container{max-width:960px}
+}
+.post-list{
+  width: 100%;
 }
 </style>
