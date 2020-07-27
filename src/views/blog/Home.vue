@@ -13,6 +13,8 @@
     <div class="container">
       <div class="post-list">
         <PostCard/>
+        <PostCard/>
+        <PostCard/>
       </div>
     </div>
   </div>
@@ -52,6 +54,10 @@ export default {
   height: 100%;
   text-align: center;
   color: azure;
+}
+
+.post-list{
+  margin-top: -50px;
 }
 
 .container {
